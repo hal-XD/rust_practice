@@ -16,6 +16,8 @@ pub fn overflow() {
 pub fn character() {
     let c1 = 'a';
     let s1 = "a";
+    assert_eq!(c1,'a');
+    assert_eq!(s1,"a");
     let emoji = '\u{1f600}';
     let emos = "\u{1F916} oh emoji! \u{1F4AF}";
     println!("{} {}",emoji,emos);

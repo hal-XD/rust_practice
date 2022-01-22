@@ -1,5 +1,3 @@
-use std::ops::RangeBounds;
-
 
 pub fn c4_tuplp() {
     let t1 = (100,true);

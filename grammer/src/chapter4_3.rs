@@ -14,7 +14,7 @@ pub fn c4_arrary() {
     assert_eq!(a1.get(6),Some(&8_i32));
     assert_eq!(a1.get(1000),None);
     // i32
-    for el in a1 {
+    for el in a1.iter() {
         print!("{}",el);
     }
     println!("");

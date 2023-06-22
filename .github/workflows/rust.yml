@@ -27,3 +27,9 @@ jobs:
       run: |
         cd tra-dioxus
         cargo build --release  --target=x86_64-pc-windows-msvc
+    
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: artifact
+        path: tra-dioxus/target/x86_64-pc-windows-gnu/release/*.exe

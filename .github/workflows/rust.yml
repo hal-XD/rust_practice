@@ -24,6 +24,6 @@ jobs:
         override: true
 
     - name: Build dioxus app
-      run:
+      run: |
         cd tra_dioxus
         cargo build --release  --target=x86_64-pc-windows-msvc

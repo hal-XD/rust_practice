@@ -30,6 +30,14 @@ jobs:
         cd tra-dioxus
         cargo build --release  --target=x86_64-pc-windows-msvc
     
+    - name: Check Directory
+      run: |
+        pwd
+        ls
+        ls tra-dioxus
+        ls tra-dioxus/target
+        ls tra-dioxus/target/release
+    
     - name: Upload build artifacts
       uses: actions/upload-artifact@v2
       with:

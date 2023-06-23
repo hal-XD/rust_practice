@@ -7,7 +7,7 @@ fn main() {
 fn App(cx: Scope) -> Element {
     cx.render(rsx! {
         div {
-            "Hello, World! OK???"
+            "Hello, World! OK????"
         }
     })
 }

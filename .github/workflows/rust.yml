@@ -33,13 +33,11 @@ jobs:
     - name: Check Directory
       run: |
         pwd
-        ls
-        ls tra-dioxus
-        ls tra-dioxus/target
-        ls tra-dioxus/target/release
+        ls tra-dioxus/target/x86_64-pc-windows-msvc
+        ls tra-dioxus/target/x86_64-pc-windows-msvc/release
     
     - name: Upload build artifacts
       uses: actions/upload-artifact@v2
       with:
         name: artifact
-        path: tra-dioxus/target/release/*.exe
+        path: tra-dioxus/target/x86_64-pc-windows-msvc/release/*.exe
